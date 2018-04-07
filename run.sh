@@ -5,7 +5,7 @@
 
 JAVA=java -jar
 MAIN_CLASS=lib/*.jar
-APP=demo
+APP=monitor-service
 APP_DIR=/app/dat/$APP
 CLASSPATH=$APP_DIR/etc
 WORK_DIR=$APP_DIR/work
@@ -13,7 +13,7 @@ LOG_DIR=$WORK_DIR/log
 DATA_DIR=$WORK_DIR/data
 PID_FILE=$WORK_DIR/pid
 
-OPTS="-Xms3g -Xmx3g -XX:MaxDirectMemorySize=3g -XX:NewRatio=2 -XX:+UseParallelOldGC"
+OPTS="-Xms1g -Xmx1g -XX:MaxDirectMemorySize=1g -XX:NewRatio=2 -XX:+UseParallelOldGC"
 
 RETVAL=0
 
