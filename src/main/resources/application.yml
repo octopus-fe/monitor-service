@@ -1,0 +1,30 @@
+server:
+  port: 8090
+  ip:  127.0.0.1
+spring:
+  application:
+    name: ADMIN-WEB
+  boot:
+    admin:
+      url: http://${server.ip}:${server.port}
+      username: "${security.user.name}"       #These two are needed so that the client
+      password: "${security.user.password}"   #can register at the protected server api
+    client:
+       metadata:
+          user.name: "${security.user.name}"          #These two are needed so that the server
+          user.password:  "${security.user.password}" #can access the proteceted client endpoints
+security:
+  user:
+    name: 123
+    password: 123
+
+  basic:
+    enabled: false
+
+#logging:
+#  file: "traget/mi-spring-boot-admin.log"
+
+management:
+  security:
+    enabled: true
+    roles: SUPERUSER

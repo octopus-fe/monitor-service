@@ -16,6 +16,7 @@ ext {
             springBootGradlePlugins:       "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}",
             springBootStarterTest:       "org.springframework.boot:spring-boot-starter-web:${springBootVersion}",
             springBootStarterActuator:       "org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}",
+            springBootStarterSecurity:       "org.springframework.boot:spring-boot-starter-security:${springBootVersion}",
             springBootAdmin:       "de.codecentric:spring-boot-admin-server:${springBootAdminVersion}",
             springBootAdminUI:       "de.codecentric:spring-boot-admin-server-ui:${springBootAdminVersion}",
 
